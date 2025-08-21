@@ -7,11 +7,23 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\HorizonCalender.Data\HorizonCalender.Data.csproj" />
         <ProjectReference Include="..\HorizonCalender.ServiceDefaults\HorizonCalender.ServiceDefaults.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.6"/>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8" />
+        <PackageReference Include="Aspire.StackExchange.Redis.DistributedCaching" Version="9.4.1" />
+        <PackageReference Include="FluentEmail.Smtp" Version="3.0.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.8" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi"/>
+        <PackageReference Include="Scalar.AspNetCore" Version="2.6.9" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Controllers\Attendee\Dto\"/>
     </ItemGroup>
 
 </Project>
+
+

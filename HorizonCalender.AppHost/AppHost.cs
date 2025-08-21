@@ -6,11 +6,11 @@ var builder = DistributedApplication.CreateBuilder(args);
 var cache = builder.AddRedis("cache")
     .WithRedisCommander();
 
-var eventingDb = builder.AddPostgres("postgres")
+var eventingDb = builder.AddPostgres("HorizonCalender")
     .WithDataVolume()
     .WithPgAdmin(configure
         => configure.WithImageTag("latest"))
-    .AddDatabase("eventing-db");
+    .AddDatabase("horizon-db");
 
 var mailPit = builder.AddMailPit("mailpit");
 

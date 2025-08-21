@@ -10,4 +10,11 @@
         <ProjectReference Include="..\HorizonCalender.ServiceDefaults\HorizonCalender.ServiceDefaults.csproj"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" Version="9.4.1" />
+      <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components" Version="4.12.1" />
+      <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Emoji" Version="4.12.1" />
+      <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Icons" Version="4.12.1" />
+    </ItemGroup>
+
 </Project>

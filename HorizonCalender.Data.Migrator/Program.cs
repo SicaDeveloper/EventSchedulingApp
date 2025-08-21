@@ -19,7 +19,7 @@ builder.Services.AddIdentityCore<IdentityUser<Guid>>()
     .AddRoles<IdentityRole<Guid>>()
     .AddEntityFrameworkStores<HorizonCalenderDbContext>();
 
-builder.AddNpgsqlDbContext<HorizonCalenderDbContext>("eventing-db",
+builder.AddNpgsqlDbContext<HorizonCalenderDbContext>("horizon-db",
     configureSettings: settings => { settings.ConnectionString += ";Include Error Detail=true"; });
 
 var host = builder.Build();

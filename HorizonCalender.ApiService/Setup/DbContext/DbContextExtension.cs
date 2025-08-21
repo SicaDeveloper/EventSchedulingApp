@@ -10,7 +10,7 @@ public static class DbContextExtension
             .WithMetrics(x => x.AddMeter("Microsoft.EntityFrameworkCore"));
 
         builder.AddNpgsqlDbContext<HorizonCalenderDbContext>(
-            connectionName: "eventing-db",
+            connectionName: "horizon-db",
             configureSettings: settings => { settings.ConnectionString += ";Include Error Detail=true"; },
             configureDbContextOptions: options =>
             {
